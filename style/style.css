@@ -1,0 +1,232 @@
+@import url(./nullStyle.css);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Cousine:wght@400;700&display=swap');
+
+body {
+    background-color: #fff;
+}
+
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 20px;
+}
+.wrapper__body {
+    background-color: #e9e9eb;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #b0b1cd;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .wrapper__body {
+        flex-direction: column;
+    }
+}
+
+.section {
+    padding-top: 30px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+.about__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+@media (max-width: 576px) {
+    .title {
+        text-align: center;
+    }
+}
+.item {
+    position: relative;
+    padding-left: 15px;
+    font-weight: 400;
+}
+.item::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #3b42e1;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 1;
+}
+
+.wrapper__left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper__right {
+    width: 60%;
+    padding: 60px 40px;
+    color: #3b42e1;
+}
+@media (max-width: 768px) {
+    .wrapper__left {
+        width: 100%;
+        text-align: center;
+    } 
+    .wrapper__right {
+        width: 100%;
+    }
+}
+.photo {
+    width: 100%;
+}
+.photo__img {
+    width: 100%;
+    margin: 0 auto;
+}
+.photo__img img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .photo {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 576px) {
+    .photo {
+        width: 100%;
+    }
+}
+.about {
+    padding: 50px;
+    background-color: #3b42e1;
+    color: #fff;
+    flex-grow: 1;
+}
+.contacts__github-link, .contacts__linkedin-link {
+    color: #fff;
+    text-decoration: underline;
+}
+.contacts__title, .article__title {
+    margin-bottom: 30px;
+}
+.contacts__description, .article__description {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.article__description {
+    margin: 0;
+}
+
+.header {
+    border-bottom: 5px solid #3b42e1;
+}
+.header__title {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.header__subtitle {
+    font-family: 'Cousine', monospace;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 10px 0;
+}
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .header__subtitle {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+.skills__row {
+    display: flex;
+}
+.skills__column {
+    width: 50%;
+    padding: 0 10px;
+}
+.work-skills__list, .personal-skills__list {
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+    .skills__row {
+        flex-direction: column;
+    }
+    .skills__column {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.experience__item {
+    margin-bottom: 30px;
+}
+.experience__item:last-child {
+    margin-bottom: 0;
+}
+.experience__item-title {
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.experience__row {
+    display: flex;
+}
+.experience__column {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.experience__item-responsibilities-item {
+    padding-left: 15px;
+    position: relative;
+}
+.experience__item-responsibilities-item::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #3b42e1;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    z-index: 1; 
+}
+@media (max-width: 576px) {
+    .experience__row {
+        flex-direction: column;
+    }
+    .experience__column {
+        width: 100%;
+        text-align: justify;
+    }
+    .experience__item-title {
+        text-align: center;
+    }
+    .experience__item-description {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
